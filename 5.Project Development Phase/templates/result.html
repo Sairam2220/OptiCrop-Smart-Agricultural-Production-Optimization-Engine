@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🌾 OptiCrop</h1>
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="/about">About</a>
+
+        <a href="/findyourcrop">Find Your Crop</a>
+
+    </nav>
+
+</header>
+
+<section class="container">
+
+    <h2>🌾 Crop Recommendation Result</h2>
+
+    <div class="result">
+
+        <h1>{{ prediction_text }}</h1>
+
+        <p>
+            Based on the soil nutrients and environmental conditions provided,
+            OptiCrop recommends the above crop for better agricultural productivity.
+        </p>
+<p
+    style="font-size: 22px; color: #2E7D32;">🌱 Happy Farming!</p>
+    </div>
+
+    <br>
+
+    <a href="/findyourcrop">
+        <button>🌱 Predict Another Crop</button>
+    </a>
+
+</section>
+<footer>
+
+<p>
+
+🌾 OptiCrop | Smart Agricultural Production Optimization Engine
+
+</p>
+
+<p>
+
+Developed by Sai Ram
+
+</p>
+
+</footer>
+</body>
+
+</html>

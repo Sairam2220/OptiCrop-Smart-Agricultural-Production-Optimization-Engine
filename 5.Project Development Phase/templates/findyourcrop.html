@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Your Crop</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>🌾 OptiCrop</h1>
+
+    <nav>
+
+        <a href="/">Home</a>
+
+        <a href="/about">About</a>
+
+        <a href="/findyourcrop">Find Your Crop</a>
+
+    </nav>
+
+</header>
+
+<section class="container">
+
+<h2>🌱 Enter Agricultural Parameters</h2>
+<form action="/predict" method="POST">
+
+<input type="number" name="N" placeholder="Nitrogen (N)" required>
+
+<input type="number" name="P" placeholder="Phosphorous (P)" required>
+
+<input type="number" name="K" placeholder="Potassium (K)" required>
+
+<input type="number" step="any" name="temperature" placeholder="Temperature (°C)" required>
+
+<input type="number" step="any" name="humidity" placeholder="Humidity (%)" required>
+
+<input type="number" step="any" name="ph" placeholder="pH Value " required>
+
+<input type="number" step="any" name="rainfall" placeholder="Rainfall (mm)" required>
+
+<button type="submit">Predict Crop</button>
+
+</form>
+
+</section>
+<footer>
+
+<p>
+
+🌾 OptiCrop | Smart Agricultural Production Optimization Engine
+
+</p>
+
+<p>
+
+Developed by Sai Ram
+
+</p>
+
+</footer>
+</body>
+
+</html>
